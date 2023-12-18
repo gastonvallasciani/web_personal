@@ -18,31 +18,51 @@
             </ul>
         </nav>
     </header>
-
-    <section>
-        <form action="https://formsubmit.co/gastonvallasciani@gmail.com" method="post">
-            <ul>
-              <li>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="user_name" />
+    <main>
+      <section>
+          <img src="../assets/foto.jpg" alt="foto formato cv" />
+          <h1> juan pedro </h1>
+          <h2> Ingeniero electrónico </h3>
+          <h2> Especialista en sistemas embebidos </h3>
+          <h3> Buenos Aires, Argentina</h5>
+          <button>
+              <a href="./pages/contacto.html">Contacto</a>
+          </button>
+          <div>
+              <button>
+                  <a ref="https://www.linkedin.com/in/gaston-vallasciani/">Linkedin</a>
+              </button>
+              <button>
+                  <a ref="https://github.com/gastonvallasciani">Github</a>
+              </button>
+          </div>
+      </section>
+      <section>
+          <h2>Hablemos!</h2>
+          <p>Dejame un mensaje y me pondré en contacto con vos en cuanto pueda.</p>
+          <form action="https://formsubmit.co/gastonvallasciani@gmail.com" method="post">
+              <ul>
+                <li>
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                  <label for="mail">Correo electrónico:</label>
+                  <input type="email" id="mail" name="user_mail" />
+                </li>
+                <li>
+                  <label for="msg">Mensaje:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                  <button type="submit">Envíe su mensaje</button>
+                  <input type="hidden" name="_next" value="http://127.0.0.1:3000/pages/contacto.html"/>
+                  <input type="hidden" name="_captcha" value="false"/>
               </li>
-              <li>
-                <label for="mail">Correo electrónico:</label>
-                <input type="email" id="mail" name="user_mail" />
-              </li>
-              <li>
-                <label for="msg">Mensaje:</label>
-                <textarea id="msg" name="user_message"></textarea>
-              </li>
-              <li class="button">
-                <button type="submit">Envíe su mensaje</button>
-                <input type="hidden" name="_next" value="http://127.0.0.1:3000/pages/contacto.html"/>
-                <input type="hidden" name="_captcha" value="false"/>
-            </li>
-            </ul>
-          </form>
-    </section>
-    
+              </ul>
+            </form>
+      </section>
+  </main>
 
     <footer>
         <div>
