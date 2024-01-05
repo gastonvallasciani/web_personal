@@ -1,20 +1,374 @@
+/* Importa la fuente desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
-/*
-    font-family: 'Montserrat', sans-serif;
-*/
-
-* {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FAFAFA;
+/* General styles */
+main {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+    padding-top: 20px;
 }
 
+section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+}
 
-.menu_item {
+.img_logo {
+    width: 30px; /* Ajusta el ancho según sea necesario */
+    height: 30px; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* o "contain" según tus necesidades */
+    border-radius: 50%; /* Si es una imagen circular */
+    margin-right: 8px; /* Otra opción: ajusta el margen entre la imagen y el texto */
+}
+
+* {
+    background-color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.backgroud_color_white {
+    background-color: #FFFFFF;
+}
+
+.section1_h1 {
+    background-color: #FFFFFF;
+    width: 288px;
+    height: 30px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.section1_h2 {
+    width: 288px;
+    background-color: #FFFFFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.section1_h3 {
+    background-color: #FFFFFF;
+    width: 280px;
+    height: 30px;
+    text-align: center;
+    color: #202020;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* Buttons */
+.button_blue_style_text {
+    width: 105px;
+    height: 53px;
+    color: #FFF;
+
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.button_blue_style{
+    border-radius: 52px;
+    background: #6D7FFF;
+    width: 220px;
+    height: 48px;
+    justify-content: center;
+}
+
+.button_blue_content {
+    background-color: #6D7FFF;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button_white_content {
+    color: #6D7FFF;
+    background-color: #FFFFFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.button_white_style_text {
+    width: 220px;
+    padding: 12px 16px;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button_white_style{
+    border-radius: 52px;
+    border: 1px solid #6D7FFF;
+}
+
+/* menu */
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto; 
+}
+
+.menu_ul {
+    display: flex;
+    justify-content: flex-end; /* Distribuir los elementos de manera uniforme */
+    padding: 10px; /* Espaciado interno del menú */
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    position: fixed;
+}
+
+.menu_li {
+    margin-right: 40px;
+}
+
+.menu_li_a {
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* Homepage style */
+
+.homepage_main_h2 {
+    background-color: #FFFFFF;
+    width: 756px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    height: 50px;
+}
+
+.homepage_main_p {
+    background-color: #FFFFFF;
+    width: 781px;
+    height: 194px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* About me style */
+.about_me_h3 {
+    background-color: #FFFFFF;
+    width: 760px;
+    height: 20px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.about_me_p{
+    background-color: #FFFFFF;
+    width: 690px;
+    height: 333px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about_me_ul{
+    background-color: #FFFFFF;
+    width: 603px;
+    height: 170.105px;
+}
+
+.about_me_li{
+    background-color: #FFFFFF;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px
+}
+
+/* Experience style */
+.experience_main_h3 {
+    background-color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.experience_main_ul {
     list-style: none;
 }
 
-.menu_item_a {
-    text-decoration: none;
-    color: black;
+.experience_main_li_h4 {
+    background-color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.experience_main_li_h3 {
+    background-color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.experience_main_li_li {
+    background-color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* Project style */
+
+.img_photo {
+    background-color: #FFFFFF;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.project_image {
+    background-color: #FFFFFF;
+    width: 35%;
+    border-radius: 12px;
+}
+
+.project_title {
+    background-color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.project_paragraph {
+    background-color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 238px;
+}
+
+.project_item {
+    list-style: none;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+/* Contact style */
+
+.contact_main_h2 {
+    background-color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.contact_main_p{
+    background-color: #FFFFFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.mcontact_main_label {
+    color: #9C9797;
+    background-color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.contact_main_text {
+    background-color: #E9E9E9;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 514px;
+    height: 53px;
+}
+
+.contact_main_text_area {
+    background-color: #E9E9E9;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 514px;
+    height: 261px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: flex-end; /* Distribuir los elementos de manera uniforme */
+    padding-top: 10px; 
+    padding-bottom: 15px;
+    padding-right: 10px;
+    margin: 3px;
+}
+
+.footer_a {
+    padding-right: 5px;
 }

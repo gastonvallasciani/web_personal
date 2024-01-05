@@ -5,50 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Gaston Vallasciani</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="./assets/images/logo/logo.png" alt="logo" class="img_logo" />
+                <img src="../assets/images/logo/logo.png" alt="logo" class="img_logo" />
             </div>
             <div>
                 <ul class="menu_ul">        
                     <li class="menu_li">
-                        <a class="menu_li_a" href="./index.html">Homepage</a>
+                        <a class="menu_li_a" href="../index.html">Homepage</a>
                     </li>
                     <li class="menu_li">
-                        <a class="menu_li_a" href="./pages/about_me.html">Sobre mí</a>
+                        <a class="menu_li_a" href="./about_me.html">Sobre mí</a>
                     </li>
                     <li class="menu_li">
-                        <a class="menu_li_a" href="./pages/experience.html">Experiencia</a>
+                        <a class="menu_li_a" href="./experience.html">Experiencia</a>
                     </li>
                     <li class="menu_li">
-                        <a class="menu_li_a" href="./pages/project.html">Proyectos</a>
+                        <a class="menu_li_a" href="./project.html">Proyectos</a>
                     </li>
                     <li class="menu_li">
-                        <a class="menu_li_a" href="./pages/contact.html">Contacto</a>
+                        <a class="menu_li_a" href="./contact.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <h2 class="homepage_main_h2">Hola,</h2>
-        <p class="homepage_main_p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quis enim quidem alias distinctio! Obcaecati quam impedit soluta consectetur mollitia minus nisi, corrupti architecto quae laborum rem dolores repellat ut?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quis enim quidem alias distinctio! Obcaecati quam impedit soluta consectetur mollitia minus nisi, corrupti architecto quae laborum rem dolores repellat ut?
-        </p>
+        <h2 class="contact_main_h2"> Hablemos! </h2>
+        <p class="contact_main_p">Dejame un mensaje y me pondré en contacto con vos en cuanto pueda.</p>
+        <form action="https://formsubmit.co/gastonvallasciani@gmail.com" method="post">
+            <div class="backgroud_color_white">
+                <label class="contact_main_label" for="name">Tu nombre:</label>
+                <input class="contact_main_text" type="text" id="name" name="user_name" />
+            </div>
+            <div class="backgroud_color_white">
+                <label class="contact_main_label" for="mail">Correo electrónico:</label>
+                <input class="contact_main_text" type="email" id="mail" name="user_mail" />
+            </div>
+            <div class="backgroud_color_white">
+                <label class="contact_main_label" for="msg">Mensaje:</label>
+                <textarea class="contact_main_text_area" id="msg" name="user_message"></textarea>
+            </div>
+            <div class="backgroud_color_white">
+                <button class="button_blue_style button_blue_style_text" type="submit">Enviar</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:3000/pages/contacto.html"/>
+                <input type="hidden" name="_captcha" value="false"/>
+            </div>
+        </form>
     </main>
     <section class="backgroud_color_white">
-        <img src="./assets/images/foto.jpg" alt="foto formato cv" class="img_photo" />
+        <img src="../assets/images/foto.jpg" alt="foto formato cv" class="img_photo" />
         <h1 class="backgroud_color_white"> juan pedro </h1>
         <h2 class="backgroud_color_white"> Ingeniero electrónico </h2>
         <h2 class="backgroud_color_white"> Especialista en sistemas embebidos </h2>
         <h3 class="backgroud_color_white"> Buenos Aires, Argentina</h3>
         <button class="button_blue_style button_blue_style_text">
-            <a class="button_blue_content" href="./pages/contact.html">Contacto</a>
+            <a class="button_blue_content" href="./contact.html">Contacto</a>
         </button>
         <div class="backgroud_color_white">
             <button class="button_white_style_text button_white_style">
@@ -59,7 +75,6 @@
             </button>
         </div>
     </section>
-    
     <footer>
         <div>
             <a href="https://www.linkedin.com/in/gaston-vallasciani/"><i class="fa-brands fa-linkedin footer_a"></i></a>
