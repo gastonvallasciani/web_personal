@@ -1,7 +1,10 @@
+/*--------------------------------------------------------------------------------*/
 /* Importa la fuente desde Google Fonts */
+/*--------------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
-
-/* General styles */
+/*--------------------------------------------------------------------------------*/
+/*--------------------------- General styles -------------------------------------*/
+/*--------------------------------------------------------------------------------*/
 main {
     background-color: #FFFFFF;
     padding: 20px;
@@ -73,8 +76,9 @@ body, h1, h2, h3, h4, h5, p {
     font-weight: 400;
     line-height: 20px;
 }
-
-/* Buttons */
+/*--------------------------------------------------------------------------------*/
+/*-----------------------------Buttons--------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
 .button_blue_style_text {
     width: 105px;
     height: 53px;
@@ -127,15 +131,19 @@ body, h1, h2, h3, h4, h5, p {
     border-radius: 52px;
     border: 1px solid #6D7FFF;
 }
-
-/* menu */
-
+/*--------------------------------------------------------------------------------*/
+/*----------------------------------- menu ---------------------------------------*/
+/*--------------------------------------------------------------------------------*/
 body {
     margin: 0;
 }
 
 nav {
     display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    width: 100vw;
 }
 
 .logo {
@@ -145,15 +153,16 @@ nav {
 
 .menu_ul {
     display: flex;
-    justify-content: flex-end; /* Distribuir los elementos de manera uniforme */
     padding: 10px; /* Espaciado interno del menú */
     align-items: center;
     width: 100%;
     list-style: none;
-    position: fixed;
+   
 }
 
 .menu_li {
+    display: flex;
+    justify-content: flex-end;
     margin-right: 40px;
 }
 
@@ -191,8 +200,9 @@ nav {
     font-weight: 500;
     line-height: 26px;
 }
-
-/* About me style */
+/*--------------------------------------------------------------------------------*/
+/*----------------------------About me style--------------------------------------*/
+/*--------------------------------------------------------------------------------*/
 .about_me_h3 {
     background-color: #FFFFFF;
     width: 760px;
@@ -230,8 +240,9 @@ nav {
     font-weight: 400;
     line-height: 24px
 }
-
-/* Experience style */
+/*--------------------------------------------------------------------------------*/
+/*----------------------------Experience style------------------------------------*/
+/*--------------------------------------------------------------------------------*/
 .experience_main_h3 {
     background-color: #FFFFFF;
     font-family: Montserrat;
@@ -271,13 +282,15 @@ nav {
     font-weight: 400;
     line-height: 24px;
 }
-
-/* Project style */
-
+/*--------------------------------------------------------------------------------*/
+/*------------------------------Project style-------------------------------------*/
+/*--------------------------------------------------------------------------------*/
 .img_photo {
     background-color: #FFFFFF;
     width: 50%;
+    max-width: 500px;
     border-radius: 50%;
+    object-fit:cover;
 }
 
 .project_image {
@@ -310,9 +323,9 @@ nav {
     background-color: #FFFFFF;
     border-radius: 12px;
 }
-
-/* Contact style */
-
+/*--------------------------------------------------------------------------------*/
+/*-----------------------------Contact style--------------------------------------*/
+/*--------------------------------------------------------------------------------*/
 .contact_main_h2 {
     background-color: #FFFFFF;
     font-size: 48px;
@@ -357,9 +370,9 @@ nav {
     width: 514px;
     height: 261px;
 }
-
-/* Footer */
-
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------Footer------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
 footer {
     display: flex;
     justify-content: flex-end; /* Distribuir los elementos de manera uniforme */
@@ -372,3 +385,15 @@ footer {
 .footer_a {
     padding-right: 5px;
 }
+
+
+.section_container {
+    display: flex;
+    align-items: center;
+}
+
+.section_div {
+    display: flex;
+    height: 500px;
+}
+/*--------------------------------------------------------------------------------*/
