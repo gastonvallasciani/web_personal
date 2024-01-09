@@ -398,22 +398,27 @@ nav {
 /*--------------------------------------------------------------------------------*/
 footer {
     display: flex;
+    justify-content: center; /* Distribuir los elementos de manera uniforme */
+    margin-top: 6rem;
+    border-top: 0.2rem solid #000;
+}
+
+.redes {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
     justify-content: flex-end; /* Distribuir los elementos de manera uniforme */
-    padding-top: 10px; 
-    padding-bottom: 15px;
-    padding-right: 10px;
-    margin: 3px;
 }
 
 .footer_a {
-    padding-right: 5px;
+    padding: 1.5rem;
+    color: #000;
 }
 
 
 .section_container {
-    display: flex;
-    
-    
+    display: flex;   
 }
 
 .section_div {
@@ -423,5 +428,11 @@ footer {
     align-items: center;
     flex-direction:column;
     display: flex;
+}
+
+.section_div_buttons {
+    display: flex;
+    align-items: center;
+    flex-direction:column;
 }
 /*--------------------------------------------------------------------------------*/
