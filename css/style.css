@@ -3,20 +3,42 @@
 /*--------------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 /*--------------------------------------------------------------------------------*/
-/*--------------------------- General styles -------------------------------------*/
+/*------------------------------ Style reset -------------------------------------*/
 /*--------------------------------------------------------------------------------*/
+/* Reset */
+* {
+    background-color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset de tamaño de fuente para que 1 rem y 1 em sean 10 px*/
+/* Trabajar fuentes con medida rem en lugar de px */
+html {
+    font-size: 62.5%;
+}
+
+/* Para que las imagenes ocupen el 100 porciento del contenedor */
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*------------------------------ General style -----------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
 main {
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 20px;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
-section {
-    background-color: #FFFFFF;
-    padding: 20px;
-    border-radius: 20px;
-}
 
 .img_logo {
     width: 30px; /* Ajusta el ancho según sea necesario */
@@ -26,12 +48,6 @@ section {
     margin-right: 8px; /* Otra opción: ajusta el margen entre la imagen y el texto */
 }
 
-* {
-    background-color: #FAFAFA;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body, h1, h2, h3, h4, h5, p {
     font-family: 'Montserrat', sans-serif;
@@ -134,10 +150,6 @@ body, h1, h2, h3, h4, h5, p {
 /*--------------------------------------------------------------------------------*/
 /*----------------------------------- menu ---------------------------------------*/
 /*--------------------------------------------------------------------------------*/
-body {
-    margin: 0;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -147,13 +159,13 @@ nav {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 10rem;
     height: auto; 
 }
 
 .menu_ul {
     display: flex;
-    padding: 10px; /* Espaciado interno del menú */
+    padding: 1rem; /* Espaciado interno del menú */
     align-items: center;
     width: 100%;
     list-style: none;
@@ -163,21 +175,32 @@ nav {
 .menu_li {
     display: flex;
     justify-content: flex-end;
-    margin-right: 40px;
+    margin-right: 4rem;
 }
+
 
 .menu_li_a {
     text-decoration: none;
     color: black;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 2rem;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s ease;
 }
 
-/* Homepage style */
+.menu_li_a:hover {
+    color: #808080; /* Cambiar color de texto a gris al pasar el mouse */
+    border-bottom-color: #808080; /* Cambiar color del borde inferior a gris al pasar el mouse */
+    /* Agregar más estilos de hover según sea necesario */
+}
 
+
+/*--------------------------------------------------------------------------------*/
+/*----------------------------------Homepage style--------------------------------*/
+/*--------------------------------------------------------------------------------*/
 .homepage_main_h2 {
     background-color: #FFFFFF;
     width: 756px;
@@ -389,11 +412,16 @@ footer {
 
 .section_container {
     display: flex;
-    align-items: center;
+    
+    
 }
 
 .section_div {
     display: flex;
-    height: 500px;
+    justify-content:center;
+    
+    align-items: center;
+    flex-direction:column;
+    display: flex;
 }
 /*--------------------------------------------------------------------------------*/
