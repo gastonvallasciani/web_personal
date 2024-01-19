@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
+            <div class="logo_container">
                 <img src="../assets/images/logo/logo.png" alt="logo" class="img_logo" />
             </div>
             <div>
@@ -34,75 +34,88 @@
             </div>
         </nav>
     </header>
-    <main>
-        <ul class="project">
-            <li class="project_item">
-                <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
-                <h3 class="project_title"/> Nombre del proyecto </h3>
-                <p class="project_paragraph"> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
-                </p>
-            </li>
-            <li class="project_item">
-                <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
-                <h3 class="project_title"> Nombre del proyecto </h3>
-                <p class="project_paragraph"> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
-                </p>
-            </li>
-            <li class="project_item">
-                <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
-                <h3 class="project_title"> Nombre del proyecto </h3>
-                <p class="project_paragraph"> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
-                </p>
-            </li>
-            <li class="project_item">
-                <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
-                <h3 class="project_title"> Nombre del proyecto </h3>
-                <p class="project_paragraph"> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
-                </p>
-            </li>
-            <li class="project_item">
-                <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
-                <h3 class="project_title"> Nombre del proyecto </h3>
-                <p class="project_paragraph"> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
-                </p>
-            </li>
-            <li class="project_item">
-                <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
-                <h3 class="project_title"> Nombre del proyecto </h3>
-                <p class="project_paragraph"> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
-                </p>
-            </li>
-        </ul>
-    </main>
-    <section class="backgroud_color_white">
-        <img src="../assets/images/foto.jpg" alt="foto formato cv" class="img_photo" />
-        <h1 class="backgroud_color_white"> juan pedro </h1>
-        <h2 class="backgroud_color_white"> Ingeniero electrónico </h2>
-        <h2 class="backgroud_color_white"> Especialista en sistemas embebidos </h2>
-        <h3 class="backgroud_color_white"> Buenos Aires, Argentina</h3>
-        <button class="button_blue_style button_blue_style_text">
-            <a class="button_blue_content" href="./contact.html">Contacto</a>
-        </button>
-        <div class="backgroud_color_white">
-            <button class="button_white_style_text button_white_style">
-                <a class="button_white_content" href="https://www.linkedin.com/in/gaston-vallasciani/">Linkedin</a>
-            </button>
-            <button class="button_white_style_text button_white_style">
-                <a class="button_white_content" href="https://github.com/gastonvallasciani">Github</a>
-            </button>
+    <div class="principal_container">
+        <section class="backgroud_color_white section_container">
+            <div class="section_div">
+                <div class="section_div_img">
+                    <img src="../assets/images/foto.jpg" alt="foto formato cv" class="img_photo" />
+                </div>
+                <h1 class="name"> juan pedro </h1>
+                <div class="degree_container">
+                    <h2 class="degree_1"> Ingeniero electrónico </h2>
+                    <h2 class="degree_2"> Especialista en sistemas embebidos </h2>
+                    <h3 class="date"> Buenos Aires, Argentina</h3>
+                </div>
+                <div class="contact_button_container">
+                    <button class="button_blue_style button_blue_style_text">
+                        <a class="button_blue_content" href="./pages/contact.html">Contacto</a>
+                    </button>
+                </div>
+                <div class="social_media_buttons_container">
+                    <button class="button_white_style_text button_white_style">
+                        <a class="button_white_content" target="_blank" href="https://www.linkedin.com/in/gaston-vallasciani/">Linkedin</a>
+                    </button>
+                    <button class="button_white_style_text button_white_style">
+                        <a class="button_white_content" target="_blank" href="https://github.com/gastonvallasciani">Github</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div class="project_main_container">
+            <main>
+                <div class="project">
+                    <div class="project_item">
+                        <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
+                        <h3 class="project_title"/> Nombre del proyecto </h3>
+                        <p class="project_paragraph"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
+                        </p>
+                    </div>
+                    <div class="project_item">
+                        <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
+                        <h3 class="project_title"> Nombre del proyecto </h3>
+                        <p class="project_paragraph"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
+                        </p>
+                    </div>
+                    <div class="project_item">
+                        <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
+                        <h3 class="project_title"> Nombre del proyecto </h3>
+                        <p class="project_paragraph"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
+                        </p>
+                    </div>
+                    <div class="project_item">
+                        <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
+                        <h3 class="project_title"> Nombre del proyecto </h3>
+                        <p class="project_paragraph"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
+                        </p>
+                    </div>
+                    <div class="project_item">
+                        <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
+                        <h3 class="project_title"> Nombre del proyecto </h3>
+                        <p class="project_paragraph"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
+                        </p>
+                    </div>
+                    <div class="project_item">
+                        <img src="../assets/images/Conexionado sonda.png" alt="Imagen proyecto AVU" class="project_image"/>
+                        <h3 class="project_title"> Nombre del proyecto </h3>
+                        <p class="project_paragraph"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias sint dolore quia voluptatem reprehenderit, non maiores facere harum ipsam hic et asperiores laborum architecto eaque eligendi. Ea, nulla repellendus? 
+                        </p>
+                    </div>
+                </div>
+            </main>
         </div>
-    </section>
-    <footer>
-        <div>
-            <a href="https://www.linkedin.com/in/gaston-vallasciani/"><i class="fa-brands fa-linkedin footer_a"></i></a>
-            <a href="https://github.com/gastonvallasciani"><i class="fa-brands fa-github footer_a"></i></a>
+    </div>
+    <footer class="footer">
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/gaston-vallasciani/" target="_blank"><i class="fa-brands fa-linkedin footer_a"></i></a>
+            <a href="https://github.com/gastonvallasciani" target="_blank"><i class="fa-brands fa-github footer_a"></i></a>
         </div>
+        <p class="footer_p"> © Copyright 2024. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

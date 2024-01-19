@@ -2,12 +2,13 @@
 /* Importa la fuente desde Google Fonts */
 /*--------------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 /*--------------------------------------------------------------------------------*/
 /*------------------------------ Style reset -------------------------------------*/
 /*--------------------------------------------------------------------------------*/
 /* Reset */
 * {
-    background-color: #FAFAFA;
+    background-color: #fafafa93;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,26 +29,13 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*--------------------------------------------------------------------------------*/
 /*------------------------------ General style -----------------------------------*/
 /*--------------------------------------------------------------------------------*/
-
-main {
-    background-color: #FFFFFF;
-    padding: 20px;
-    border-radius: 20px;
-    padding-top: 50px;
-}
-
-
-.img_logo {
-    width: 30px; /* Ajusta el ancho según sea necesario */
-    height: 30px; /* Ajusta la altura según sea necesario */
-    object-fit: cover; /* o "contain" según tus necesidades */
-    border-radius: 50%; /* Si es una imagen circular */
-    margin-right: 8px; /* Otra opción: ajusta el margen entre la imagen y el texto */
-}
-
 
 body, h1, h2, h3, h4, h5, p {
     font-family: 'Montserrat', sans-serif;
@@ -57,69 +45,39 @@ body, h1, h2, h3, h4, h5, p {
     background-color: #FFFFFF;
 }
 
-.section1_h1 {
-    background-color: #FFFFFF;
-    width: 288px;
-    height: 30px;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-}
-
-.section1_h2 {
-    width: 288px;
-    background-color: #FFFFFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.section1_h3 {
-    background-color: #FFFFFF;
-    width: 280px;
-    height: 30px;
-    text-align: center;
-    color: #202020;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+.principal_container{
+    display: flex;
+    align-items:flex-start; /* Ajusta la alineación vertical según tus necesidades */
+    flex-direction: row;
+    padding: 8rem 2rem 2rem 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 /*--------------------------------------------------------------------------------*/
 /*-----------------------------Buttons--------------------------------------------*/
 /*--------------------------------------------------------------------------------*/
 .button_blue_style_text {
-    width: 105px;
-    height: 53px;
+    width: 10rem;
+    height: 5rem;
     color: #FFF;
-
     text-align: center;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
 .button_blue_style{
-    border-radius: 52px;
+    border-radius: 5.2rem;
     background: #6D7FFF;
-    width: 220px;
-    height: 48px;
+    width: 22rem;
+    height: 4.8rem;
     justify-content: center;
 }
 
 .button_blue_content {
     background-color: #6D7FFF;
     color: #FFFFFF;
-    text-decoration: none;
 }
 
 .button_white_content {
@@ -127,24 +85,23 @@ body, h1, h2, h3, h4, h5, p {
     background-color: #FFFFFF;
     text-align: center;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    text-decoration: none;
 }
 
 .button_white_style_text {
-    width: 220px;
-    padding: 12px 16px;
+    width: 22rem;
+    padding: 1.2rem 1.6rem;
     background-color: #FFFFFF;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
 .button_white_style{
-    border-radius: 52px;
+    border-radius: 5.2rem;
+    margin: 0.5rem;
     border: 1px solid #6D7FFF;
 }
 /*--------------------------------------------------------------------------------*/
@@ -156,11 +113,20 @@ nav {
     position: fixed;
     align-items: center;
     width: 100vw;
+
 }
 
-.logo {
-    max-width: 10rem;
-    height: auto; 
+.logo_container {
+    max-width: 20rem;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 2rem; 
+    margin-bottom: 1rem; 
+}
+
+.img_logo {
+    width: 5rem; /* Ajusta el ancho según sea necesario */
+    height: 5rem; /* Ajusta la altura según sea necesario */
 }
 
 .menu_ul {
@@ -168,8 +134,6 @@ nav {
     padding: 1rem; /* Espaciado interno del menú */
     align-items: center;
     width: 100%;
-    list-style: none;
-   
 }
 
 .menu_li {
@@ -201,238 +165,436 @@ nav {
 /*--------------------------------------------------------------------------------*/
 /*----------------------------------Homepage style--------------------------------*/
 /*--------------------------------------------------------------------------------*/
-.homepage_main_h2 {
+
+.homepage_main {
+    display: flex;
     background-color: #FFFFFF;
-    width: 756px;
-    font-family: Montserrat;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 50px;
-    height: 50px;
+    padding: 3rem;
+    border-radius: 3rem;
+    flex-direction:column;
+    flex: 1;
+    width: 100%;
+
+}
+    
+
+@media screen and (min-width: 500px)
+{
+    .homepage_main {
+        padding: 5rem;
+    }
 }
 
-.homepage_main_p {
+.homepage_main_tittle {
     background-color: #FFFFFF;
-    width: 781px;
-    height: 194px;
-    color: #000;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    /*opacity: 0.8;*/
+}
+
+.homepage_main_paragrpah {
+    background-color: #FFFFFF;
+    /*color: #111d8b;*/
+    font-family: Montserrat;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 3rem;
+    /*opacity: 0.8;*/
 }
 /*--------------------------------------------------------------------------------*/
 /*----------------------------About me style--------------------------------------*/
 /*--------------------------------------------------------------------------------*/
+.about_me_main_container { 
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    max-width: 140rem;
+    padding: 3rem;
+    border-radius: 3rem;
+}
+
 .about_me_h3 {
     background-color: #FFFFFF;
-    width: 760px;
-    height: 20px;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .about_me_p{
     background-color: #FFFFFF;
-    width: 690px;
-    height: 333px;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2.4rem;
 }
 
 .about_me_ul{
     background-color: #FFFFFF;
-    width: 603px;
-    height: 170.105px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    list-style:circle;
 }
 
 .about_me_li{
     background-color: #FFFFFF;
     color: #000;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px
+    line-height: 2.4rem;
+    padding-bottom: 0.5rem;
 }
+
+.cv_button_container {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.about_me_text_block_container{
+    background-color: #FFFFFF;
+    margin-bottom: 5rem;
+}
+
 /*--------------------------------------------------------------------------------*/
 /*----------------------------Experience style------------------------------------*/
 /*--------------------------------------------------------------------------------*/
+.experience_main_container {
+    display: flex;
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    max-width: 140rem;
+    width: 100%;
+}
 .experience_main_h3 {
     background-color: #FFFFFF;
     font-family: Montserrat;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-}
-
-.experience_main_ul {
-    list-style: none;
-}
-
-.experience_main_li_h4 {
-    background-color: #FFFFFF;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-}
-
-.experience_main_li_h3 {
-    background-color: #FFFFFF;
-    font-family: Montserrat;
-    font-size: 22px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
-.experience_main_li_li {
+.experience_main_div_h4 {
     background-color: #FFFFFF;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+
+.experience_main_div_h3 {
+    background-color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.8rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    border-top: 2px solid #000;
+    padding-top: 1.5rem;
+}
+
+.experience_main_div_ul {
+    background-color: #FFFFFF;
+}
+
+.experience_main_div_ul_li {
+    background-color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2.4rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 }
 /*--------------------------------------------------------------------------------*/
 /*------------------------------Project style-------------------------------------*/
 /*--------------------------------------------------------------------------------*/
-.img_photo {
+.project_main_container {
+    display: flex;
+    flex: 1;
+    max-width: 140rem;
     background-color: #FFFFFF;
-    width: 50%;
-    max-width: 500px;
-    border-radius: 50%;
-    object-fit:cover;
+    padding: 3rem;
+    border-radius: 3rem;
 }
 
-.project_image {
+.project {
     background-color: #FFFFFF;
-    width: 35%;
-    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Tres columnas de igual ancho */
+  }
+
+.project_image {
+    width: 100%;
+    height: auto;
+    margin: 1rem;
 }
 
 .project_title {
     background-color: #FFFFFF;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 2rem;
+    margin:0.5rem
 }
 
 .project_paragraph {
     background-color: #FFFFFF;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
-    width: 238px;
+    line-height: 2rem;
+    margin:0.5rem
 }
 
 .project_item {
     list-style: none;
     background-color: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1rem;
 }
+
 /*--------------------------------------------------------------------------------*/
 /*-----------------------------Contact style--------------------------------------*/
 /*--------------------------------------------------------------------------------*/
+.contact_main_container{ 
+    display: flex;
+    flex: 1;
+    background-color: #FFFFFF;
+    border-radius: 3rem;
+    flex-direction: column;
+    max-width: 100rem;
+    padding: 5rem;
+}
+
 .contact_main_h2 {
     background-color: #FFFFFF;
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 600;
     text-align: left;
+    margin-bottom: 2rem;
 }
 
 .contact_main_p{
     background-color: #FFFFFF;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 2rem;
+    margin-bottom: 2rem;
 }
 
-.mcontact_main_label {
+.contact_main_label {
     color: #9C9797;
     background-color: #FFFFFF;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-width: 0.2rem;
+    border-color: #000;
+}
+
+.contact_main_label_text_container{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .contact_main_text {
     background-color: #E9E9E9;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    width: 514px;
-    height: 53px;
+    min-height: 4rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-width: 0.2rem;
+    border-color: #000;
 }
 
 .contact_main_text_area {
     background-color: #E9E9E9;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    width: 514px;
-    height: 261px;
+    min-height: 20rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    border-width: 0.2rem;
+    border-color: #000;
 }
 /*--------------------------------------------------------------------------------*/
 /*--------------------------------Footer------------------------------------------*/
 /*--------------------------------------------------------------------------------*/
-footer {
-    display: flex;
-    justify-content: center; /* Distribuir los elementos de manera uniforme */
+.footer {
     margin-top: 6rem;
-    border-top: 0.2rem solid #000;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #000;
+    align-items: center;
 }
 
 .redes {
-    margin-top: 4rem;
+    margin: 1rem;
     display: flex;
     gap: 2rem;
     font-size: 3rem;
-    justify-content: flex-end; /* Distribuir los elementos de manera uniforme */
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+
+.footer_p {
+    font-size: 1.5rem;
+    color: #FFF;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0.7;
 }
 
 .footer_a {
-    padding: 1.5rem;
     color: #000;
+    opacity: 0.7;
 }
 
-
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------Section-----------------------------------------*/
+/*--------------------------------------------------------------------------------*/
 .section_container {
-    display: flex;   
+    display: flex;
+    justify-content:center;
+    background-color: #FFFFFF;
+    padding: 3rem;
+    border-radius: 3rem;
+    
 }
 
 .section_div {
+    background-color: #FFFFFF;
     display: flex;
     justify-content:center;
-    
+    padding-top: 4rem;
+    padding-bottom: 2rem;
     align-items: center;
     flex-direction:column;
     display: flex;
+    max-width: 35rem;
 }
 
-.section_div_buttons {
+.section_div_img{
+    background-color: #FFFFFF;
     display: flex;
     align-items: center;
-    flex-direction:column;
+    justify-content: center;
+    margin: 2rem;
 }
+
+.img_photo {
+    background-color: #FFFFFF;
+    width: 18rem;
+    height:21rem;
+    max-width: 100rem;
+    border-radius: 0.5rem;
+    object-fit:cover;
+}
+
+.name{
+    background-color: #FFFFFF;
+    font-size: 4.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: rem;
+    margin-bottom: 1rem;
+}
+
+.degree_container{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.degree_1{
+    background-color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.degree_2{
+    background-color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    min-width: 30rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.date{
+    background-color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.social_media_buttons_container {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.contact_button_container {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
 /*--------------------------------------------------------------------------------*/
