@@ -16,7 +16,7 @@ font-family: 'DM Sans', sans-serif;
 /*--------------------------------------------------------------------------------*/
 /* Reset */
 * {
-    background-color: #fafafa93;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -129,8 +129,10 @@ body {
 
 .mail_logo {
     text-align: start;
+    font-size: 3.2rem;
     width: 100%;
     color:#000;
+    padding: 0.55rem;
 }
 
 .mail_text {
@@ -141,7 +143,6 @@ body {
     color:#000;
     text-decoration: none;
 }
-
 /*--------------------------------------------------------------------------------*/
 /*------------------------------ General style -----------------------------------*/
 /*--------------------------------------------------------------------------------*/
@@ -217,7 +218,7 @@ body, h1, h2, h3, h4, h5, p {
 /*--------------------------------------------------------------------------------*/
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     position: fixed;
     align-items: center;
     width: 100%;
@@ -255,7 +256,7 @@ nav {
     text-decoration: none;
     color: black;
     font-family: 'Onest', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-style: normal;
     opacity: 0.9;
     font-weight: 600;
@@ -265,8 +266,8 @@ nav {
 }
 
 .menu_li_a:hover {
-    color: #808080; /* Cambiar color de texto a gris al pasar el mouse */
-    border-bottom-color: #808080; /* Cambiar color del borde inferior a gris al pasar el mouse */
+    color: #4CAF50; /* Cambiar color de texto a gris al pasar el mouse */
+    border-bottom-color: #4CAF50; /* Cambiar color del borde inferior a gris al pasar el mouse */
     /* Agregar más estilos de hover según sea necesario */
 }
 
@@ -286,14 +287,14 @@ nav {
     margin: 0;
     text-align: center; /* Esto centra el contenido dentro del bloque */
     padding: 0.1rem;
-    border: 1px solid #ccc;
     border-radius: 0.8rem;
     margin-top: 8rem;
 }
 
 .homepage_main_section {
     width: 100%;
-    max-width: 100rem;
+    max-width: 85rem;
+    padding: 2rem;
 }
     
 @media screen and (min-width: 500px)
@@ -309,9 +310,9 @@ nav {
 
 .homepage_main_tittle {
     font-family: 'Onest', sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 2rem;
     /*opacity: 0.8;*/
     display: flex;
@@ -329,7 +330,7 @@ nav {
 }
 
 .homepage_main_paragrpah {
-    text-align: justify;
+    text-align:left;
     font-family: 'Onest', sans-serif;
     font-size: 2rem;
     font-style: normal;
@@ -338,21 +339,19 @@ nav {
     /*opacity: 0.8;*/
 }
 
-.homepage_experience_section {
+.homepage_main_section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    border: 1px solid #ccc;
     border-radius: 0.8rem;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
-    max-width: 100rem;
-    padding: 5rem;
+    padding: 5rem 5rem 5rem 5rem;
+    max-width: 85rem;
 }
 
-.homepage_experience_section_title {
+.homepage_main_section_title {
     font-size: 3.5rem;
     font-family: 'Onest', sans-serif;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     font-weight: 500;
 }
 
@@ -363,17 +362,17 @@ nav {
 }
 
 .homepage_experience_position {
-    padding-bottom: 1.5rem; /* Espacio entre las experiencias */
+    padding-bottom: 1rem; /* Espacio entre las experiencias */
     font-family: 'Onest', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 .homepage_experience {
     border-left: 0.3rem solid #3498db; /* Línea vertical para indicar la cronología */
     padding-left: 2rem; /* Espacio a la izquierda de la línea vertical */
-    margin-bottom: 1.5rem; /* Espacio entre las experiencias */
-    text-align: justify;
+    margin-bottom: 1rem; /* Espacio entre las experiencias */
+    text-align:left;
     font-family: 'Onest', sans-serif;
     font-size: 1.8rem;
     font-style: normal;
@@ -387,17 +386,237 @@ nav {
     font-style: normal;
     font-weight: 600;
     color: #fff;
-    border: 1.5px solid #81c7f5;
+    border: 1.5px solid #8bccf7;
     border-radius: 0.8rem;
     padding:0.6rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: #066f92d5;
+    background-color: #0b9dce;
     max-width: 11rem;
 }
 
 .homepage_know_more:hover {
     scale: 1.1;
+}
+
+.homepage_project_h3 {
+    padding-bottom: 0.5rem;
+    font-family: 'Onest', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align:left;
+}
+
+.homepage_project_paragraph {
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Onest', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    text-align:left;
+}
+
+.contenedor-imagen {
+    overflow: hidden;
+    position: relative;
+}
+
+.imagen {
+    justify-content: center;
+    width: 100%;
+    max-width: 45rem;
+    max-height: 50rem;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.homepage_img_container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+@media screen and (max-width: 500px)
+{
+    .homepage_img_container {
+        flex-wrap: wrap;
+    }
+}
+
+.badge_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.badge_properties {
+    margin : 0.5rem;
+}
+
+.homepage_about_me_title_container {
+    display:flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-bottom: 0.5rem;
+}
+
+.homepage_about_me_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 85rem;
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+.homepage_about_me_section_paragraph_style {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-family: 'Onest', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+}
+
+.homepage_about_me_section_img_p_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.homepage_contact_section_form_p_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.homepage_contact_section_form_container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img_me{ 
+    max-width: 100%; 
+    height: auto;
+    border-radius: 50%;
+}
+
+
+.homepage_contact_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 85rem;
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+.homepage_contact_form_container {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+}
+
+.homepage_contact_main_p{
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.homepage_contact_main_label {
+    color: #06740cd2;
+    font-family: 'Onest', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-width: 0.1rem;
+    border-color: #000;
+}
+
+.homepage_contact_main_label_text_container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    max-width: 60rem;
+}
+
+.homepage_contact_main_text {
+    background-color: #E9E9E9;
+    font-family: 'Onest', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    min-height: 4rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-width: 0.05rem;
+    border-color: #000;
+}
+
+.homepage_contact_main_text_area {
+    background-color: #E9E9E9;
+    font-family: 'Onest', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    min-height: 20rem;
+    width: 100%;
+    border-width: 0.05rem;
+    border-color: #000;
+}
+
+.homepage_form_button {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 60rem;
+}
+
+.homepage_about_me_img_container {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .homepage_about_me_section_img_p_container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .homepage_about_me_img_container {
+        width: 40%; /* Ajusta el tamaño del contenedor de la imagen en pantallas más grandes */
+    }
+
+    .homepage_about_me_section_paragraph_container {
+        width: 55%; /* Ajusta el tamaño del contenedor de párrafos en pantallas más grandes */
+    }
+}
+
+.homepage_contact_main_text:focus {
+    border-color: #dfe0df; /* Cambia el color del borde cuando el campo tiene el foco */
+    box-shadow: 0 0 5px #dfe0df; /* Agrega una sombra cuando el campo tiene el foco */
+    border-width: 0.5px;
+    background-color: #dfe0df;
+}
+
+.homepage_contact_main_text_area:focus {
+    border-color:#dfe0df; /* Cambia el color del borde cuando el campo tiene el foco */
+    box-shadow: 0 0 5px #dfe0df; /* Agrega una sombra cuando el campo tiene el foco */
+    border-width: 0.5px;
+    background-color: #dfe0df;
 }
 /*--------------------------------------------------------------------------------*/
 /*----------------------------About me style--------------------------------------*/
@@ -660,6 +879,30 @@ nav {
     flex-direction: column;
     border-top: 2px solid #000;
     align-items: center;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items:center;
+}
+
+.footer_mail {
+    color: black;
+    font-family: 'Onest', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    opacity: 0.9;
+    font-weight: 600;
+    margin: 0;
+}
+
+.footer_mail_container{
+    display:flex;
+    flex-direction: column;
+    padding-left: 1rem;
+
 }
 
 .redes {

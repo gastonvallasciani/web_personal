@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingeniero electrónico y Desarrollador de Sistemas Embebidos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        
         <nav>
-            <div class="logo_container">
-                <img src="./assets/images/logo/logo.png" alt="logo" class="img_logo" />
-            </div>
             <div>
                 <ul class="menu_ul">        
                     <li class="menu_li">
@@ -66,40 +63,149 @@
             </section>
             
         </main>
-        <section class="homepage_experience_section">
-            <h2 class="homepage_experience_section_title">Experiencia laboral</h2>
+        <section class="homepage_main_section">
+            <h2 class="homepage_main_section_title">Experiencia laboral</h2>
             <div class="homepage_experience">
                 <h4 class="homepage_experience_tittle"> Julio 2018 - Actualidad</h4>
-                <h3 class="homepage_experience_position"> Ingeniero de desarrollo | Pump Control SRL</h3>
-                <p> <span class="text_bold">+8 productos</span> de sistemas embebidos desarrollados <span class="text_color text_bold">from scrath</span>. Mantenimiento de productos de firmware existentes de la empresa. Desarrollo de soluciones de IoT. </p>
+                <h3 class="homepage_experience_position text_color text_bold"> Ingeniero de desarrollo | Pump Control SRL</h3>
+                <p> <span class="text_bold">+8 productos</span> de sistemas embebidos desarrollados <span class="text_color text_bold">from scratch</span>. Mantenimiento de productos de firmware existentes de la empresa. Desarrollo de soluciones de IoT. </p>
             </div>
     
             <div class="homepage_experience">
                 <h4 class="homepage_experience_tittle"> Mayo 2017 - Julio 2018</h4>
-                <h3 class="homepage_experience_position"> Ingeniero electrónico | Tecnocientífica SA</h3>
+                <h3 class="homepage_experience_position text_color text_bold"> Ingeniero electrónico | Tecnocientífica SA</h3>
                 <p> Desarrollo de firmware y hardware de productos para la agroindustria. </p>
             </div>
 
             <div class="homepage_experience">
                 <h4 class="homepage_experience_tittle"> Septiembre 2016 - Julio 2018</h4>
-                <h3 class="homepage_experience_position"> Ingeniero electrónico | M31 Electrónica SRL</h3>
+                <h3 class="homepage_experience_position text_color text_bold"> Ingeniero electrónico | M31 Electrónica SRL</h3>
                 <p> Desarrollo de firmware y hardware para transmisores de AM y FM. Reparación , mantenimiento y calibración de transmisores de radiofrecuencia. </p>
             </div>
             <a class="homepage_know_more" href="./pages/experience.html">Saber más...</a>
         </section>
 
-        <section class="homepage_experience_section">
-            <h2 class="homepage_experience_section_title">Últimos proyectos</h2>
-           
+        <section class="homepage_main_section">
+            <div class="homepage_about_me_title_container homepage_section">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-direction-horizontal" width="30" height="30" viewBox="0 0 20 20" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 9l-3 3l3 3" /><path d="M14 9l3 3l-3 3" /></svg>
+                <h2 class="homepage_main_section_title">Últimos proyectos</h2>
+            </div>
+            
+            <div class="contenedor-imagen">
+                <h3 class="homepage_project_h3 text_color text_bold">Contador de botellas</h3>
+                <p class="homepage_project_paragraph"> Solución de IoT que permite automatizar la recolección de botellas con aceite reciclado en puntos de recolección. Mediante un display color interactua con el usuario para el ingreso de botellas con aceite usado. Una vez ingresada la botella al contenedor premia al usuario con puntos para fomentar el reciclaje de aceite.</p>
+                <div class="homepage_img_container">
+                    <img src="./assets/images/proyectos/acu gastronomico/acu_img.JPG" class="imagen" alt="Imagen 1">
+                </div>
+                <div class="badge_container">
+                    <span class="badge badge-secondary badge_properties">C</span>
+                    <span class="badge badge-secondary badge_properties">FreeRtos</span>
+                    <span class="badge badge-secondary badge_properties">WiFi</span>
+                    <span class="badge badge-secondary badge_properties">3G</span>
+                    <span class="badge badge-secondary badge_properties">ESP32</span>
+                    <span class="badge badge-secondary badge_properties">Azure</span>
+                    <span class="badge badge-secondary badge_properties">MQTT</span>
+                    <span class="badge badge-secondary badge_properties">NTP</span>
+                </div>
+            </div>
+            <div class="contenedor-imagen">
+                <h3 class="homepage_project_h3 text_color text_bold">IOT-AVU</h3>
+                <p class="homepage_project_paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus saepe sunt, quas accusamus ipsam voluptatum molestias sed! Minima a vel, labore at porro hic quasi et asperiores, consequuntur modi aliquam.</p>
+                <div class="homepage_img_container">
+                    <img src="./assets/images/proyectos/iot-avu/IMG_0537.JPG" class="imagen" alt="Imagen 2">
+                </div>
+                <div class="badge_container">
+                    <span class="badge badge-secondary badge_properties">C</span>
+                    <span class="badge badge-secondary badge_properties">FreeRtos</span>
+                    <span class="badge badge-secondary badge_properties">WiFi</span>
+                    <span class="badge badge-secondary badge_properties">3G</span>
+                    <span class="badge badge-secondary badge_properties">ESP32</span>
+                    <span class="badge badge-secondary badge_properties">Azure</span>
+                    <span class="badge badge-secondary badge_properties">MQTT</span>
+                    <span class="badge badge-secondary badge_properties">NTP</span>
+                    <span class="badge badge-secondary badge_properties">RS485</span>
+                </div>
+            </div>
+            <div class="contenedor-imagen">
+                <h3 class="homepage_project_h3 text_color text_bold">WiPoint</h3>
+                <p class="homepage_project_paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus saepe sunt, quas accusamus ipsam voluptatum molestias sed! Minima a vel, labore at porro hic quasi et asperiores, consequuntur modi aliquam.</p>
+                <div class="homepage_img_container">
+                    <img src="./assets/images/proyectos/WiPoint/hardware WiPoint.jpeg" class="imagen" alt="Hardware WiPoint">
+                    <img src="./assets/images/proyectos/WiPoint/web WiPoint.jpeg" class="imagen" alt="Página web WiPoint">
+                </div>
+                <div class="badge_container">
+                    <span class="badge badge-secondary badge_properties">C</span>
+                    <span class="badge badge-secondary badge_properties">FreeRtos</span>
+                    <span class="badge badge-secondary badge_properties">WiFi</span>
+                    <span class="badge badge-secondary badge_properties">RS485</span>
+                    <span class="badge badge-secondary badge_properties">ESP32</span>
+                    <span class="badge badge-secondary badge_properties">NTP</span>
+                </div>
+                
+            </div>
             <a class="homepage_know_more" href="./pages/project.html">Ver más...</a>
         </section>
+
+        <section class="homepage_about_me_section">
+            <div class="homepage_about_me_title_container homepage_section">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-scan" width="26" height="26" viewBox="0 0 22 22" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 9a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M4 8v-2a2 2 0 0 1 2 -2h2" /><path d="M4 16v2a2 2 0 0 0 2 2h2" /><path d="M16 4h2a2 2 0 0 1 2 2v2" /><path d="M16 20h2a2 2 0 0 0 2 -2v-2" /><path d="M8 16a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2" /></svg>
+                <h2 class="homepage_main_section_title">Sobre mí</h2>
+            </div>
+            <div class="homepage_about_me_section_img_p_container">
+                <div class="homepage_about_me_section_paragraph_container">
+                    <p class="homepage_about_me_section_paragraph_style"> Mi nombre es Gastón, soy ingeniero electrónico y en mi trabajo cada día me enfrento con grandes desafíos que involucran integración de tecnologías y optimización de recursos.</p>
+                    <p class="homepage_about_me_section_paragraph_style"> En los últimos años me he enfoncado en el desarrollo de sistemas embebidos buscando que cada producto desarrollado logre resolver alguna problemática de la industria.</p>
+                    <p class="homepage_about_me_section_paragraph_style"> Mi desarrollo profesional me lleva a perfeccionarme continuamente, es por ello, que realice la Especialización en sistemas embebidos en la Universidad de Buenos Aires y varios cursos de perfeccionamiento en C++, Python, IoT y desarrollo web.</p>   
+                </div>
+                <div class="homepage_about_me_img_container">
+                    <img src="./assets/images/foto personal/yo.jpg" class="img_me" alt="foto personal">
+                </div>
+            </div>
+        </section>
+
+        <section class="homepage_contact_section">
+            <div class="homepage_about_me_title_container homepage_section">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" stroke-width="0" fill="currentColor" /><path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" stroke-width="0" fill="currentColor" /></svg>                <h2 class="homepage_main_section_title">Contacto</h2>
+            </div>
+            <div class="homepage_contact_section_form_p_container">
+                <p class="homepage_contact_main_p">Deja un mensaje y me pondré en contacto con vos en cuanto pueda. Gracias!</p>
+                <form class="homepage_contact_form_container" action="https://formsubmit.co/gastonvallasciani@gmail.com" method="post">
+                    <div class="homepage_contact_main_label_text_container">
+                        <label class="homepage_contact_main_label" for="name">Nombre</label>
+                        <input class="homepage_contact_main_text" type="text" id="name" name="user_name"/>
+                    </div>
+                    <div class="homepage_contact_main_label_text_container">
+                        <label class="homepage_contact_main_label" for="mail">E-mail</label>
+                        <input class="homepage_contact_main_text" type="email" id="mail" name="user_mail" />
+                    </div>
+                    <div class="homepage_contact_main_label_text_container">
+                        <label class="homepage_contact_main_label" for="msg">Mensaje</label>
+                        <textarea class="homepage_contact_main_text_area" id="msg" name="user_message"></textarea>
+                    </div>
+                    <div class="homepage_form_button">
+                        <button class="homepage_know_more" type="submit">Enviar</button>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:3000/"/>
+                        <input type="hidden" name="_captcha" value="false"/>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </div>
     <footer class="footer">
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/gaston-vallasciani/" target="_blank"><i class="fa-brands fa-linkedin footer_a"></i></a>
-            <a href="https://github.com/gastonvallasciani" target="_blank"><i class="fa-brands fa-github footer_a"></i></a>
+        <div class="footer_container">
+            <div class="footer_mail_container">
+                <p class="footer_mail">gastonvallasciani@gmail.com</p>
+            </div>
+            
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/gaston-vallasciani/" target="_blank"><i class="fa-brands fa-linkedin footer_a"></i></a>
+                <a href="https://github.com/gastonvallasciani" target="_blank"><i class="fa-brands fa-github footer_a"></i></a>
+            </div>
         </div>
+        
         <p class="footer_p"> © Copyright 2024. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
