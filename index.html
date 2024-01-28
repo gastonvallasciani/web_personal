@@ -10,37 +10,32 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-                <ul class="menu_ul">        
-                    <li class="menu_li">
-                        <a class="menu_li_a" href="./index.html">Homepage</a>
-                    </li>
-                    <li class="menu_li">
-                        <a class="menu_li_a" href="./pages/about_me.html">Sobre mí</a>
-                    </li>
-                    <li class="menu_li">
-                        <a class="menu_li_a" href="./pages/experience.html">Experiencia</a>
-                    </li>
-                    <li class="menu_li">
-                        <a class="menu_li_a" href="./pages/project.html">Proyectos</a>
-                    </li>
-                    <li class="menu_li">
-                        <a class="menu_li_a" href="./pages/contact.html">Contacto</a>
-                    </li>
-                </ul>
+     
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse menu_ul" id="navbarNavAltMarkup">
+                <div class="navbar-nav menu_li">
+                    <a class="menu_li_a nav-link"  href="#homepage">Homepage</a>
+                    <a class="menu_li_a nav-link" href="#experience">Experiencia</a>
+                    <a class="menu_li_a nav-link" href="#projects">projects</a>
+                    <a class="menu_li_a nav-link" href="#about_me">Sobre mí</a>
+                    <a class="menu_li_a nav-link" href="#contact">Contacto</a>
+                </div>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
     <div class="homepage_container">
         <main class="homepage_main_container">
-            <section class="homepage_main_section">
+            <section class="homepage_main_section" id="homepage">
                 <div class="homepage_main_tittle_container">
                     <h2 class="homepage_main_tittle">
                         <span>Hola! soy Gastón</span>
                         <a class="badge" href="https://github.com/gastonvallasciani" target="_blank">Disponible para Trabajar</a>
                     </h2>
-                    
                 </div>
                 <p class="homepage_main_paragrpah">
                     +6 años de experiencia. <span class="text_color text_bold">Ingeniero electrónico y Desarrollador de Sistemas Embebidos</span>. De Buenos Aires, Argentina. Especializado en el desarrollo 
@@ -63,7 +58,7 @@
             </section>
             
         </main>
-        <section class="homepage_main_section">
+        <section class="homepage_main_section" id="experience">
             <h2 class="homepage_main_section_title">Experiencia laboral</h2>
             <div class="homepage_experience">
                 <h4 class="homepage_experience_tittle"> Julio 2018 - Actualidad</h4>
@@ -85,7 +80,7 @@
             <a class="homepage_know_more" href="./pages/experience.html">Saber más...</a>
         </section>
 
-        <section class="homepage_main_section">
+        <section class="homepage_main_section" id="projects">
             <div class="homepage_about_me_title_container homepage_section">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-direction-horizontal" width="30" height="30" viewBox="0 0 20 20" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 9l-3 3l3 3" /><path d="M14 9l3 3l-3 3" /></svg>
                 <h2 class="homepage_main_section_title">Últimos proyectos</h2>
@@ -146,7 +141,7 @@
             <a class="homepage_know_more" href="./pages/project.html">Ver más...</a>
         </section>
 
-        <section class="homepage_about_me_section">
+        <section class="homepage_about_me_section" id="about_me">
             <div class="homepage_about_me_title_container homepage_section">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-scan" width="26" height="26" viewBox="0 0 22 22" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 9a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M4 8v-2a2 2 0 0 1 2 -2h2" /><path d="M4 16v2a2 2 0 0 0 2 2h2" /><path d="M16 4h2a2 2 0 0 1 2 2v2" /><path d="M16 20h2a2 2 0 0 0 2 -2v-2" /><path d="M8 16a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2" /></svg>
                 <h2 class="homepage_main_section_title">Sobre mí</h2>
@@ -163,7 +158,7 @@
             </div>
         </section>
 
-        <section class="homepage_contact_section">
+        <section class="homepage_contact_section" id="contact">
             <div class="homepage_about_me_title_container homepage_section">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" stroke-width="0" fill="currentColor" /><path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" stroke-width="0" fill="currentColor" /></svg>                <h2 class="homepage_main_section_title">Contacto</h2>
             </div>
@@ -207,5 +202,25 @@
         <p class="footer_p"> © Copyright 2024. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        // Añade un desplazamiento al hacer clic en los enlaces del menú de navegación
+        document.querySelectorAll('.menu_li_a').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    const offset = targetElement.offsetTop - document.querySelector('.navbar').offsetHeight;
+
+                    window.scrollTo({
+                        top: offset,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

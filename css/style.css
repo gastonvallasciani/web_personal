@@ -225,6 +225,10 @@ nav {
 
 }
 
+.navbar-toggler-icon {
+    font-size: 2rem; /* Ajusta el tamaño según tus preferencias */
+  }
+
 .logo_container {
     max-width: 20rem;
     height: auto;
@@ -241,15 +245,25 @@ nav {
 
 .menu_ul {
     display: flex;
-    padding: 1rem; /* Espaciado interno del menú */
+    padding: 2rem; /* Espaciado interno del menú */
     align-items: center;
     width: 100%;
+    justify-content: center;
 }
+
+@media (max-width: 768px) {
+    
+    .menu_ul {
+        justify-content: flex-start;
+    }
+    .navbar {
+        margin: 0.5rem 0.5rem;
+    }
+  }
 
 .menu_li {
     display: flex;
     justify-content: flex-end;
-    margin-right: 4rem;
 }
 
 .menu_li_a {
@@ -259,6 +273,7 @@ nav {
     font-size: 1.5rem;
     font-style: normal;
     opacity: 0.9;
+    margin-right: 3rem;
     font-weight: 600;
     line-height: 2rem;
     border-bottom: 2px solid #fff;
@@ -306,6 +321,7 @@ nav {
 
 .homepage_main_tittle_container {
     display: flex;
+    padding-top: 1rem;
 }
 
 .homepage_main_tittle {
@@ -513,7 +529,7 @@ nav {
     flex-direction: column;
     width: 100%;
     max-width: 85rem;
-    padding: 5rem 5rem 5rem 5rem;
+    padding: 7rem 5rem 5rem 5rem;
 }
 
 .homepage_contact_form_container {
