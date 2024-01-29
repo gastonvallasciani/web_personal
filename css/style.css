@@ -56,6 +56,12 @@ body {
     margin-left: 1rem;
 }
 
+.carosuel_size {
+    max-width: 50rem;
+    width: auto;
+    height: 100%;
+}
+
 .badge:hover {
     scale: 1.1;
 }
