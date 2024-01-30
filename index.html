@@ -23,6 +23,10 @@
                     <a class="menu_li_a nav-link" href="#projects">projects</a>
                     <a class="menu_li_a nav-link" href="#about_me">Sobre mí</a>
                     <a class="menu_li_a nav-link" href="#contact">Contacto</a>
+                    <button class="nav-link button_blue_content">
+                        <a class="menu_li_a" href="./assets/documents/CV_GAV_Español.pdf" download="CV_GAV_Español.pdf" target="_blank"> <i class="fa fa-download" aria-hidden="true"></i>
+                            CV</a> 
+                    </button>
                 </div>
               </div>
             </div>
@@ -88,13 +92,13 @@
             
             <div class="contenedor-imagen">
                 <h3 class="homepage_project_h3 text_color text_bold">Control de granja horticultura</h3>
-                <p class="homepage_project_paragraph"> Solución de IoT que permite automatizar una granja de horticultura. Mediante una página web embebida le permite al usuario configurar el equipo. Posee un modo manual controlado por pulsadores y un modo automático por página web que permite configurar horarios de funcionamiento. </p>
-                <p class="homepage_project_paragraph"> El equipo posee las siguientes funcionalidades:</p>
+                <p class="homepage_project_paragraph"> Solución de IoT que permite automatizar una granja de horticultura. Mediante una página web embebida el usuario puede configurar el equipo. Posee un modo manual controlado por pulsadores y un modo automático por página web que permite configurar horarios de funcionamiento. </p>
+                <p class="homepage_project_paragraph"> El equipo posee las siguientes características:</p>
                 <ul>
-                    <li>configurar la potencia de las luces led entre 0 y 100%.</li>
-                    <li>activar la función de Amanecer y Atardecer</li>
-                    <li>Permite controlar etapa vegetativa y de floración de la planta.</li>
-                    <li> permite controlar una salida de 220v para controlar humedad del ambiente.</li>
+                    <li class="homepage_project_menu_li">Selección de potencia de luces led entre 0 y 100%.</li>
+                    <li class="homepage_project_menu_li">Función Amanecer y Atardecer</li>
+                    <li class="homepage_project_menu_li">Permite controlar etapa vegetativa y de floración de la planta.</li>
+                    <li class="homepage_project_menu_li">Permite controlar una salida de 220v para controlar humedad del ambiente.</li>
                 </ul>
                 
                 <div class="homepage_img_container">
@@ -110,11 +114,12 @@
                             <img src="./assets/images/proyectos/control horticultura/pcb frontal.jpg" class="d-block w-100" alt="control horticultura imagen pcb frontal">
                           </div>
                           <div class="carousel-item">
-                            <img src="./assets/images/proyectos/control horticultura/web config.jpg" alt="control horticultura imagen web config">
-                          </div>
-                          <div class="carousel-item">
                             <img src="./assets/images/proyectos/control horticultura/web indice.jpg" alt="control horticultura imagen web indice">
                           </div>
+                          <div class="carousel-item">
+                            <img src="./assets/images/proyectos/control horticultura/web config.jpg" alt="control horticultura imagen web config">
+                          </div>
+                          
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -130,11 +135,8 @@
                     <span class="badge badge-secondary badge_properties">C</span>
                     <span class="badge badge-secondary badge_properties">FreeRtos</span>
                     <span class="badge badge-secondary badge_properties">WiFi</span>
-                    <span class="badge badge-secondary badge_properties">3G</span>
                     <span class="badge badge-secondary badge_properties">ESP32</span>
-                    <span class="badge badge-secondary badge_properties">Azure</span>
-                    <span class="badge badge-secondary badge_properties">MQTT</span>
-                    <span class="badge badge-secondary badge_properties">NTP</span>
+                    <span class="badge badge-secondary badge_properties">PWM</span>
                 </div>
             </div>
             <div class="contenedor-imagen">
@@ -199,8 +201,8 @@
             </div>
             <div class="homepage_about_me_section_img_p_container">
                 <div class="homepage_about_me_section_paragraph_container">
-                    <p class="homepage_about_me_section_paragraph_style"> Mi nombre es Gastón, soy ingeniero electrónico y en mi trabajo cada día me enfrento con grandes desafíos que involucran integración de tecnologías y optimización de recursos.</p>
-                    <p class="homepage_about_me_section_paragraph_style"> En los últimos años me he enfoncado en el desarrollo de sistemas embebidos buscando que cada producto desarrollado logre resolver alguna problemática de la industria.</p>
+                    <p class="homepage_about_me_section_paragraph_style"> Mi nombre es Gastón, en mi trabajo cada día me enfrento con grandes desafíos que involucran integración de tecnologías y optimización de recursos.</p>
+                    <p class="homepage_about_me_section_paragraph_style"> En los últimos años me he enfoncado en el desarrollo de sistemas embebidos con el objetivo que cada producto desarrollado resuelva alguna problemática o logre introducir un nuevo producto en la industria.</p>
                     <p class="homepage_about_me_section_paragraph_style"> Mi desarrollo profesional me lleva a perfeccionarme continuamente, es por ello, que realice la Especialización en sistemas embebidos en la Universidad de Buenos Aires y varios cursos de perfeccionamiento en C++, Python, IoT y desarrollo web.</p>   
                 </div>
                 <div class="homepage_about_me_img_container">
@@ -253,25 +255,5 @@
         <p class="footer_p"> © Copyright 2024. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-        // Añade un desplazamiento al hacer clic en los enlaces del menú de navegación
-        document.querySelectorAll('.menu_li_a').forEach(function(anchor) {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    const offset = targetElement.offsetTop - document.querySelector('.navbar').offsetHeight;
-
-                    window.scrollTo({
-                        top: offset,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
