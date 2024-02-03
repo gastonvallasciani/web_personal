@@ -81,7 +81,6 @@
                 <h3 class="homepage_experience_position text_color text_bold"> Ingeniero electrónico | M31 Electrónica SRL</h3>
                 <p> Desarrollo de firmware y hardware para transmisores de AM y FM. Reparación , mantenimiento y calibración de transmisores de radiofrecuencia. </p>
             </div>
-            <a class="homepage_know_more" href="./pages/experience.html">Saber más...</a>
         </section>
 
         <section class="homepage_main_section" id="projects">
@@ -96,7 +95,7 @@
                 <p class="homepage_project_paragraph"> El equipo posee las siguientes características:</p>
                 <ul>
                     <li class="homepage_project_menu_li">Selección de potencia de luces led entre 0 y 100%.</li>
-                    <li class="homepage_project_menu_li">Función Amanecer y Atardecer</li>
+                    <li class="homepage_project_menu_li">Función Amanecer y Atardecer.</li>
                     <li class="homepage_project_menu_li">Permite controlar etapa vegetativa y de floración de la planta.</li>
                     <li class="homepage_project_menu_li">Permite controlar una salida de 220v para controlar humedad del ambiente.</li>
                 </ul>
@@ -178,20 +177,36 @@
                 <h3 class="homepage_project_h3 text_color text_bold">WiPoint</h3>
                 <p class="homepage_project_paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus saepe sunt, quas accusamus ipsam voluptatum molestias sed! Minima a vel, labore at porro hic quasi et asperiores, consequuntur modi aliquam.</p>
                 <div class="homepage_img_container">
-                    <img src="./assets/images/proyectos/WiPoint/hardware WiPoint.jpeg" class="imagen" alt="Hardware WiPoint">
-                    <img src="./assets/images/proyectos/WiPoint/web WiPoint.jpeg" class="imagen" alt="Página web WiPoint">
-                </div>
-                <div class="badge_container">
-                    <span class="badge badge-secondary badge_properties">C</span>
-                    <span class="badge badge-secondary badge_properties">FreeRtos</span>
-                    <span class="badge badge-secondary badge_properties">WiFi</span>
-                    <span class="badge badge-secondary badge_properties">RS485</span>
-                    <span class="badge badge-secondary badge_properties">ESP32</span>
-                    <span class="badge badge-secondary badge_properties">NTP</span>
-                </div>
-                
+                    <div id="carousel_wipoint" class="carousel slide carosuel_size">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./assets/images/proyectos/WiPoint/gabinete WiPoint.jpeg" class="d-block w-100" alt="control horticultura imagen pcb superior">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/images/proyectos/WiPoint/hardware WiPoint.jpeg" class="d-block w-100" alt="control horticultura imagen pcb inferior">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/images/proyectos/WiPoint/web WiPoint.jpeg" class="d-block w-100" alt="control horticultura imagen pcb frontal">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel_wipoint" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel_wipoint" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
             </div>
-            <a class="homepage_know_more" href="./pages/project.html">Ver más...</a>
+            <div class="badge_container">
+                <span class="badge badge-secondary badge_properties">C</span>
+                <span class="badge badge-secondary badge_properties">FreeRtos</span>
+                <span class="badge badge-secondary badge_properties">WiFi</span>
+                <span class="badge badge-secondary badge_properties">RS485</span>
+                <span class="badge badge-secondary badge_properties">ESP32</span>
+                <span class="badge badge-secondary badge_properties">NTP</span>
+            </div>
         </section>
 
         <section class="homepage_about_me_section" id="about_me">
@@ -231,7 +246,7 @@
                         <textarea class="homepage_contact_main_text_area" id="msg" name="user_message"></textarea>
                     </div>
                     <div class="homepage_form_button">
-                        <button class="homepage_know_more" type="submit">Enviar</button>
+                        <button type="submit" class="btn btn-primary button_size">Enviar</button>
                         <input type="hidden" name="_next" value="http://127.0.0.1:3000/"/>
                         <input type="hidden" name="_captcha" value="false"/>
                     </div>

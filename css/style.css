@@ -47,6 +47,14 @@ body {
 /*--------------------------------------------------------------------------------*/
 /*------------------------------ Resources ---------------------------------------*/
 /*--------------------------------------------------------------------------------*/
+
+.button_size {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1.8rem;
+    width:100%;
+    font-weight: 500;
+}
+
 .badge {
     padding: 0.4rem 1rem;
     background-color: #4CAF50; /* Color de fondo verde, puedes ajustarlo según tus preferencias */
@@ -143,7 +151,7 @@ body {
 
 .mail_text {
     font-family: 'Onest', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 400;
     color:#000;
@@ -337,10 +345,17 @@ nav {
     font-size: 3.5rem;
     font-style: normal;
     font-weight: 700;
-    margin-bottom: 2rem;
     /*opacity: 0.8;*/
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 500px)
+{
+    .homepage_main_tittle {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 }
 
 .homepage_redes {
@@ -373,7 +388,7 @@ nav {
 }
 
 .homepage_main_section_title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: 'Onest', sans-serif;
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-weight: 500;
@@ -464,12 +479,12 @@ nav {
     width: 100%;
     max-width: 45rem;
     max-height: 50rem;
-    padding: 1rem 3rem 1rem 3rem;
 }
 
 .homepage_img_container {
     display: flex;
     justify-content: space-around;
+    gap: 7rem;
     
 }
 
@@ -477,8 +492,10 @@ nav {
 {
     .homepage_img_container {
         flex-wrap: wrap;
+        gap: 1rem;
     }
 }
+
 
 .badge_container {
     display: flex;
@@ -486,6 +503,17 @@ nav {
     padding-top: 2rem;
     padding-bottom: 2rem;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px)
+{
+    .badge_container {
+        justify-content: normal;
+    }
+
+    .badge {
+        margin-left: 0rem;
+    }
 }
 
 .badge_properties {
@@ -586,6 +614,7 @@ nav {
     flex-direction: column;
     width: 100%;
     max-width: 60rem;
+    padding-bottom: 0.5rem;
 }
 
 .homepage_contact_main_text {
