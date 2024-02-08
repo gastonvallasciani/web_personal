@@ -37,7 +37,7 @@
             <section class="homepage_main_section" id="homepage">
                 <div class="homepage_main_tittle_container">
                     <h2 class="homepage_main_tittle">
-                        <span>Hola! soy Gastón</span>
+                        <span>Gastón<span class="text_color text_bold">Dev</span></span>
                         <a class="badge" href="https://github.com/gastonvallasciani" target="_blank">Disponible para Trabajar</a>
                     </h2>
                 </div>
@@ -142,7 +142,27 @@
                 <h3 class="homepage_project_h3 text_color text_bold">Contador de botellas</h3>
                 <p class="homepage_project_paragraph"> Solución de IoT que permite automatizar la recolección de botellas con aceite reciclado en puntos de recolección. Mediante un display color interactua con el usuario para el ingreso de botellas con aceite usado. Una vez ingresada la botella al contenedor premia al usuario con puntos para fomentar el reciclaje de aceite.</p>
                 <div class="homepage_img_container">
-                    <img src="./assets/images/proyectos/acu gastronomico/acu_img.JPG" class="imagen" alt="Imagen 1">
+                    <div id="carousel_contador_botellas" class="carousel slide carosuel_size">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./assets/images/proyectos/acu gastronomico/display.jpeg" class="d-block w-100" alt="contador de botellas display">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/images/proyectos/acu gastronomico/electronica.jpeg" class="d-block w-100" alt="contador de botellas electronica">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/images/proyectos/acu gastronomico/electronica 3g.jpeg" class="d-block w-100" alt="contador de botelas electronica con 3g">
+                          </div>     
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel_contador_botellas" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel_contador_botellas" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                 </div>
                 <div class="badge_container">
                     <span class="badge badge-secondary badge_properties">C</span>
@@ -216,7 +236,7 @@
             </div>
             <div class="homepage_about_me_section_img_p_container">
                 <div class="homepage_about_me_section_paragraph_container">
-                    <p class="homepage_about_me_section_paragraph_style"> Mi nombre es Gastón, en mi trabajo cada día me enfrento con grandes desafíos que involucran integración de tecnologías y optimización de recursos.</p>
+                    <p class="homepage_about_me_section_paragraph_style"> Mi nombre real es Gastón, en mi trabajo cada día me enfrento con grandes desafíos que involucran integración de tecnologías y optimización de recursos.</p>
                     <p class="homepage_about_me_section_paragraph_style"> En los últimos años me he enfoncado en el desarrollo de sistemas embebidos con el objetivo que cada producto desarrollado resuelva alguna problemática o logre introducir un nuevo producto en la industria.</p>
                     <p class="homepage_about_me_section_paragraph_style"> Mi desarrollo profesional me lleva a perfeccionarme continuamente, es por ello, que realice la Especialización en sistemas embebidos en la Universidad de Buenos Aires y varios cursos de perfeccionamiento en C++, Python, IoT y desarrollo web.</p>   
                 </div>
@@ -231,7 +251,11 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" stroke-width="0" fill="currentColor" /><path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" stroke-width="0" fill="currentColor" /></svg>                <h2 class="homepage_main_section_title">Contacto</h2>
             </div>
             <div class="homepage_contact_section_form_p_container">
-                <p class="homepage_contact_main_p">Deja un mensaje y me pondré en contacto con vos en cuanto pueda. Gracias!</p>
+                <p class="homepage_contact_main_p">Si tenes una oportunidad laboral, un proyecto interesante o simplemente deseas conversar sobre una colaboración, </p> 
+                <p class="homepage_contact_main_p">¡me encantaría saber de vos!</p> 
+                <p class="homepage_contact_main_p">Por favor, utiliza el formulario de contacto a continuación para ponerte en contacto conmigo y explorar cómo podemos trabajar juntos.</p>
+                <p class="homepage_contact_main_p">Tu mensaje es importante para mí, y estoy esperando conocer más sobre cómo puedo contribuir a tus objetivos y proyectos.</p>
+                <p class="homepage_contact_main_p">¡Gracias por considerarme y espero poder colaborar vos pronto!</p>
                 <form class="homepage_contact_form_container" action="https://formsubmit.co/gastonvallasciani@gmail.com" method="post">
                     <div class="homepage_contact_main_label_text_container">
                         <label class="homepage_contact_main_label" for="name">Nombre</label>
