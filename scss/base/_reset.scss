@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------------------------*/
+/*------------------------------ Style reset -------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+/* Reset */
+* {
+    background-color: $background_color;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset de tamaño de fuente para que 1 rem y 1 em sean 10 px*/
+/* Trabajar fuentes con medida rem en lugar de px */
+html {
+    font-size: 62.5%;
+}
+
+/* Para que las imagenes ocupen el 100 porciento del contenedor */
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $principal_color;
+}
+
+body {
+    min-height: 100vh;
+}

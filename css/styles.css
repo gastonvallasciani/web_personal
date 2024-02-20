@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------------------------*/
+/*------------------------------ Style reset -------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+/* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Onest:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap");
+* {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset de tamaño de fuente para que 1 rem y 1 em sean 10 px*/
+/* Trabajar fuentes con medida rem en lugar de px */
+html {
+  font-size: 62.5%;
+}
+
+/* Para que las imagenes ocupen el 100 porciento del contenedor */
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*----------------------------------- menu ---------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  font-size: 2rem; /* Ajusta el tamaño según tus preferencias */
+}
+
+.logo_container {
+  max-width: 20rem;
+  height: auto;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.img_logo {
+  width: 5rem; /* Ajusta el ancho según sea necesario */
+  height: 5rem; /* Ajusta la altura según sea necesario */
+  opacity: 0.9;
+}
+
+.menu_ul {
+  display: flex;
+  padding: 2rem; /* Espaciado interno del menú */
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.menu_ul_li {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu_ul_li_a {
+  font-family: "Onest", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  opacity: 0.9;
+  margin-right: 3rem;
+  font-weight: 600;
+  line-height: 2rem;
+  border-bottom: 2px solid #fff;
+  transition: all 0.5s ease;
+}
+.menu_ul_li_li:hover {
+  color: #4CAF50; /* Cambiar color de texto a gris al pasar el mouse */
+  border-bottom-color: #4CAF50; /* Cambiar color del borde inferior a gris al pasar el mouse */
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Onest', sans-serif;
+font-family: 'DM Sans', sans-serif;
+*/
+
+/*# sourceMappingURL=styles.css.map */
