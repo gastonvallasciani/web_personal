@@ -339,7 +339,7 @@ nav {
     border-top: 1px solid #000;
     opacity: 0.7;
     &_container {
-        @include flex(column, space-between, center, null);
+        @include flex(null, space-between, center, null);
         width: 100%;
         &_copyright {
             @include flex(row, flex-end, null, null);
@@ -350,9 +350,10 @@ nav {
                 display: none;
             }
             &_p {
+                @include flex(row, null, null, null);
                 @include font_config($font_medium, null, null, null);
-                width: 100%;
                 padding: 1rem;
+                width: 100%;
                 margin-top: 1rem;
             }
         }
