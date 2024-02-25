@@ -1,0 +1,31 @@
+.badge_container {
+    @include flex(null, center, null, null);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px){
+        @include flex(null, flex-start, null, null);
+    }
+}
+
+.badge {
+    padding: 0.4rem 1rem;
+    @include font_config($font_small, null, null, $third_font_color);
+    background-color: $badge_color; /* Color de fondo verde, puedes ajustarlo según tus preferencias */
+    border-radius: 0.4rem; /* Bordes redondeados */
+    margin-left: 1rem;
+    
+    &:hover {
+        scale: 1.1;
+    }
+    @media screen and (max-width: 768px){
+        margin-left: 0rem;
+    }
+}
+
+.badge_properties {
+    margin : 0.5rem;
+}
+
+
+

@@ -1,0 +1,15 @@
+
+.button_size {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    @include font_config($font_large, null, 500, null);
+    width:100%;
+}
+
+.button_color {
+   background-color: #148a1abd;
+   border-color: #08920fd2;
+   &:hover {
+    background-color: #16741bd2;
+    border-color: #08920fd2;
+   }
+}

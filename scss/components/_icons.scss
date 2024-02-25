@@ -1,0 +1,69 @@
+
+.linkedin_container{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    &_a {
+        &_text {
+            font-size: $font_medium;
+            font-style: normal;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        &_logo {
+            text-align: start;
+            width: 100%;
+            color: $linkedin_color;
+            &:hover {
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+
+.github_container {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    &_a {
+        &_text {
+            font-size: $font_medium;
+            font-style: normal;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        &_logo {
+            text-align: start;
+            width: 100%;
+            &:hover {
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+.mail_container {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    &_i{
+        &_logo {
+            text-align: start;
+            font-size: $font_xxxl;
+            width: 100%;
+            padding: 0.55rem;
+        }
+    }
+    &_div{
+        &_text {
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+}

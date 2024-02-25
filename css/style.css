@@ -234,12 +234,12 @@ nav {
     }
   }
 
-.menu_li {
+.menu_ul_li {
     display: flex;
     justify-content: flex-end;
 }
 
-.menu_li_a {
+.menu_ul_li_a {
     text-decoration: none;
     color: black;
     font-family: 'Onest', sans-serif;
@@ -253,7 +253,7 @@ nav {
     transition: all 0.5s ease;
 }
 
-.menu_li_a:hover {
+.menu_ul_li_a:hover {
     color: #4CAF50; /* Cambiar color de texto a gris al pasar el mouse */
     border-bottom-color: #4CAF50; /* Cambiar color del borde inferior a gris al pasar el mouse */
     /* Agregar más estilos de hover según sea necesario */

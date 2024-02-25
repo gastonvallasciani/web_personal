@@ -2,58 +2,395 @@
 /*----------------------------------- menu ---------------------------------------*/
 /*--------------------------------------------------------------------------------*/
 nav {
-    display: flex;
-    justify-content: center;
     position: fixed;
-    align-items: center;
     width: 100%;
+    @include flex(null, center, center, null);
+    .navbar-toggler-icon {
+        @include font_config($font_xl, null, null, null);
+    }
 
-}
+    .menu_ul {
+        @include flex(null, center, center, null);
+        padding: 0.5rem; /* Espaciado interno del menú */
+        width: 100%;
+        @media (max-width: 768px) {
+            @include flex(null, flex-start, null, null);
+        }
+    }
 
-.navbar-toggler-icon {
-    font-size: 2rem; /* Ajusta el tamaño según tus preferencias */
-  }
-
-.logo_container {
-    max-width: 20rem;
-    height: auto;
-    margin-top: 1rem;
-    margin-left: 2rem; 
-    margin-bottom: 1rem; 
-}
-
-.img_logo {
-    width: 5rem; /* Ajusta el ancho según sea necesario */
-    height: 5rem; /* Ajusta la altura según sea necesario */
-    opacity: 0.9;
-}
-
-.menu_ul {
-    display: flex;
-    padding: 2rem; /* Espaciado interno del menú */
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-
-    &_li {
-        display: flex;
-        justify-content: flex-end;
-
+    .menu_li {
+        @include flex(null, flex-end, null, null);
+        
         &_a {
-            font-family: 'Onest', sans-serif;
-            font-size: 1.5rem;
-            font-style: normal;
+            @include font_config($font_medium, normal, 600, $principal_font_color);
             opacity: 0.9;
             margin-right: 3rem;
-            font-weight: 600;
-            line-height: 2rem;
+            line-height: $line_height_small;
             border-bottom: 2px solid #fff;
             transition: all 0.5s ease;
-        }
 
-        &_li:hover{
-            color: #4CAF50; /* Cambiar color de texto a gris al pasar el mouse */
-            border-bottom-color: #4CAF50; /* Cambiar color del borde inferior a gris al pasar el mouse */
+            &:hover {
+                color: $nav_hover; 
+                border-bottom-color: $nav_hover; 
+            }
+
+            &:hover .menu_li_a_i{
+                color: $nav_hover; 
+                border-bottom-color: $nav_hover; 
+            }
         }
     }
 }
+/*--------------------------------------------------------------------------------*/
+/*----------------------------------- Homepage -----------------------------------*/
+/*--------------------------------------------------------------------------------*/
+.homepage_container {
+    @include flex(column, center, center, 2rem);
+    
+    &_div {
+        margin: 0;
+        text-align: center;
+        padding: 0.1rem;
+        border-radius: 0.8rem;
+        margin-top: 8rem;
+  
+        &_section {
+            width: 100%;
+            max-width: 85rem;
+            padding: 5rem 2rem 2rem 2rem;
+    
+            @media screen and (max-width: 768px) {
+                padding: 4rem;
+            }
+    
+            &_tittle_container {
+                display: flex;
+                padding-top: 1rem;
+        
+                &_tittle {
+                    @include font_config($font_xxxxl, normal, 500, null);
+                    @include flex(null, null, center, null);
+
+                    @media screen and (max-width: 500px) {
+                        flex-wrap: wrap;
+                        gap: 1rem;
+                    }
+                }
+            }
+
+            &_paragraph {
+                @include font_config($font_xl, normal, 500, null);
+                text-align: left;
+                line-height: 3rem;
+                @media screen and (max-width: 500px) {
+                    @include font_config($font_large, null, null, null);
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+            }
+
+            &_social_media {
+                @include flex(null, flex-start, center, 2rem);
+                @include font_config($font_xxl, null, null, null);
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
+    }
+
+    &_section {
+        width: 100%;
+        max-width: 85rem;
+        padding: 5rem 2rem 2rem 2rem;
+        @media screen and (max-width: 500px) {
+            padding: 4rem;
+        }
+        &_tittle {
+            @include font_config($font_xxl, normal, 500, null);
+            @include flex(null, null, center, null);
+            @media screen and (max-width: 500px) {
+                flex-wrap: wrap;
+                @include flex(null, null, center, 1rem);
+            }
+        }
+        &_experience {
+            border-left: 0.3rem solid #3498db; /* Línea vertical para indicar la cronología */
+            padding-left: 2rem; /* Espacio a la izquierda de la línea vertical */
+            margin-bottom: 2rem; /* Espacio entre las experiencias */
+            margin-top: 2rem; /* Espacio entre las experiencias */
+            text-align:left;
+            @include font_config($font_large, normal, 500, null);
+            line-height: 3rem;
+            @media screen and (max-width: 500px){
+                @include font_config($font_medium, null, null, null);
+                line-height: 2.4rem;
+            }
+            &_tittle {
+                padding-bottom: 0.5rem;
+                font-weight: 600;
+                @include font_config(null, null, 600, null);
+            }
+            &_position {
+                padding-bottom: 1rem; /* Espacio entre las experiencias */
+                @include font_config(font_xl, null, 500, null);
+                @media screen and (max-width: 500px){
+                    @include font_config(&font_large, null, null, null);
+                }
+            }
+        }
+
+        &_project {
+            &_tittle {
+                &_container {
+                    padding-bottom: 0.5rem;
+                    @include flex(null, flex-start, baseline, null);
+
+                    &_tittle {
+                        @include font_config($font_xxl, normal, 500, null);
+                        @include flex(null, null, center, null);
+                
+                        @media screen and (max-width: 500px) {
+                            flex-wrap: wrap;
+                            gap: 1rem;
+                        }
+                    }
+                }
+            }
+            overflow: hidden;
+            position: relative;
+            &_h3 {
+                @include font_config($font_xl, normal, 700, null);
+                padding-bottom: 0.5rem;
+                text-align:left;
+                @media screen and (max-width: 500px) {
+                    @include font_config($font_large, null, null, null);
+                }
+                
+            }
+            &_paragraph {
+                padding-top: 0.3rem;
+                padding-bottom: 0.3rem;
+                @include font_config($font_large, normal, 500, null);
+                text-align:left;
+                @media screen and (max-width: 500px) {
+                    @include font_config($font_medium, null, null, null);
+                    line-height: 2.4rem;
+                }
+            }
+            &_ul {
+                &_li {
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    padding-left: 0.3rem;
+                    @include font_config($font_large, normal, 500, null);
+                    text-align: left;
+                    list-style: disc;
+                    @media screen and (max-width: 500px){
+                        @include font_config($font_medium, null, null, null);
+                        line-height: 2.4rem;
+                    }
+                }
+            }
+        }
+        &_about_me {
+            @include flex(column, null, null, null);
+            width: 100%;
+            max-width: 85rem;
+            padding: 5rem 2rem 5rem 2rem;
+            @media screen and (max-width: 768px) {
+                padding: 5rem 4rem 5rem 4rem;
+            }
+            &_title_container {
+                @include flex(null, flex-start, baseline, null);
+                padding-bottom: 0.5rem;
+                &_title {
+                    @include font_config($font_xxl, null, 500, null);
+                    padding: 0.5rem 1rem 0.5rem 1rem;
+                }
+            }
+            &_container{
+                @include flex(row, null, null, null);
+                flex-wrap: wrap;
+                @media screen and (min-width: 768px) {
+                    @include flex(row, space-between, null, null);
+                }
+                &_paragraph_container {
+                    @media screen and (min-width: 768px) {
+                        width: 55%; /* Ajusta el tamaño del contenedor de párrafos en pantallas más grandes */
+                    }
+                    &_paragraph {
+                        padding-top: 0.2rem;
+                        padding-bottom: 0.2rem;
+                        @include font_config($font_large, normal, 500, null);
+                        text-align: left;
+                        @media screen and (max-width: 500px){
+                            @include font_config($font_medium, null, null, null);
+                            line-height: 2.4rem;
+                            max-width: 100%; 
+                        }
+                    }
+                }
+            }
+            &_img_container{
+                text-align: center;
+                @media screen and (min-width: 768px) {
+                    width: 40%; 
+                }
+            }
+        }   
+        &_contact{
+            @include flex(column, null, null, null);
+            width: 100%;
+            max-width: 85rem;
+            padding: 5rem 2rem 5rem 2rem;
+            @media screen and (max-width: 768px) {
+                padding: 5rem 4rem 5rem 4rem;
+            }
+            &_title_container{
+                @include flex(null, flex-start, baseline, null);
+                padding-bottom: 0.5rem;
+                &_title {
+                    @include font_config($font_xxl, null, 500, null);
+                    padding: 0.5rem 1rem 0.5rem 1rem;
+                }
+            }
+            &_form{
+                @include flex(column, flex-start, null, null);
+                
+                &_p{
+                    @include font_config($font_large, normal, 500, null);
+                    line-height: 2.4rem;
+                    padding-bottom: $font_medium;
+                        @media screen and (max-width: 500px){
+                        @include font_config($font_medium, normal, 500, null);
+                    }
+                }
+                &_container{
+                    @include flex(column, flex-start, center, 0.5rem);
+                    width:100%;
+                    background-color: #fff;
+                    @include font_config($font_medium, null, null, null);
+                    padding: 4rem 0rem 4rem 0rem;
+                    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+                    border-radius: 2rem;
+                    @media screen and (max-width: 500px){
+                        padding: 3rem 2rem 3rem 2rem;
+                    }
+                    &_label_text_container{
+                        @include flex(column, flex-start, space-around, null);
+                        width: 100%;
+                        max-width: 60rem;
+                        padding-bottom: 0.5rem;
+                        background-color: #fff;
+                        &_label {
+                            @include font_config($font_medium, normal, 600, null);
+                            line-height: 2rem;
+                            margin-bottom: 0.5rem;
+                            width: 100%;
+                            border-width: 0.1rem;
+                            border-color: #000;
+                            background-color: #fff;
+
+                        }
+                        &_text {
+                            background-color: #E9E9E9;
+                            @include font_config($font_large, normal, 500, null);
+                            min-height: 4rem;
+                            margin-bottom: 0.5rem;
+                            width: 100%;
+                            border-width: 0.05rem;
+                            border-color: #000;
+                        }
+                        &_text_area {
+                            background-color: #E9E9E9;
+                            @include font_config($font_large, normal, 500, null);
+                            margin-bottom: 2rem;
+                            min-height: 20rem;
+                            width: 100%;
+                            border-width: 0.05rem;
+                            border-color: #000;
+                            &:focus{
+                                border-color:#dfe0df; /* Cambia el color del borde cuando el campo tiene el foco */
+                                box-shadow: 0 0 5px #dfe0df; /* Agrega una sombra cuando el campo tiene el foco */
+                                border-width: 0.5px;
+                                background-color: #dfe0df;
+                            }
+                        }
+                    }
+                }
+                &_button_container {
+                    @include flex(column, flex-start, null, null);
+                    width: 100%;
+                    max-width: 60rem;
+                }
+            }
+        }
+            
+        
+    }
+    
+}
+/*--------------------------------------------------------------------------------*/
+/*----------------------------------- FOOTER -------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+.footer{ 
+    @include flex(column, null, center, null);
+    margin: 0rem 0rem;
+    border-top: 1px solid #000;
+    opacity: 0.7;
+    &_container {
+        @include flex(column, space-between, center, null);
+        width: 100%;
+        &_copyright {
+            @include flex(row, flex-end, null, null);
+            flex-wrap: nowrap;
+            width: 100%;
+            
+            @media (max-width: 768px) {
+                display: none;
+            }
+            &_p {
+                @include font_config($font_medium, null, null, null);
+                width: 100%;
+                padding: 1rem;
+                margin-top: 1rem;
+            }
+        }
+        &_redes {
+            @include flex(null, flex-end, center, null);
+            @include font_config($font_xxl, null, null, null);
+            flex-wrap: nowrap;
+            width: 100%;
+            padding: 1rem;
+            @media (max-width: 768px) {
+                @include flex(null, center, null, null);
+            }
+            &_mail_container {
+                @include flex(row, flex-end, center, null);
+                flex-wrap: nowrap;
+                
+                @media (max-width: 768px) {
+                    display: none;
+                }
+                &_mail {
+                    @include font_config($font_medium, normal, 400, null);
+                    margin: 0;
+                }
+                &_logo {
+                    padding: 0.7rem;
+                }
+                
+            }
+        }
+    }
+}
+
+.footer_a {
+    color: $principal_color;
+    padding: 0.5rem;
+}
+
+.footer_a_container {
+    color: $principal_color;
+}
+/*--------------------------------------------------------------------------------*/

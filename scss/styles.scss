@@ -1,4 +1,13 @@
 @import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./base/tipography";
 @import "./base/reset";
 @import "./views/homepage";
-@import "./components/fonts"
+@import "./components/badges";
+@import "./components/icons";
+@import "./components/resources";
+@import "./components/images";
+@import "./components/carousel";
+@import "./components/buttons";
+
+

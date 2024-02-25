@@ -1,0 +1,29 @@
+.homepage_img_container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;    
+    @media screen and (max-width: 500px){
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+.imagen {
+    justify-content: center;
+    width: 100%;
+    max-width: 45rem;
+    max-height: 50rem;
+}
+
+
+.img_me{ 
+    max-width: 100%; 
+    height: auto;
+    border-radius: 50%;
+    @media screen and (max-width: 500px){
+        max-width: 0%; 
+    }
+}
+
+
+
