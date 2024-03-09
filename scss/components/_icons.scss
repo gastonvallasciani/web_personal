@@ -17,6 +17,7 @@
             color: $linkedin_color;
             &:hover {
                 scale: 1.1;
+                opacity: 0.75;
             }
         }
     }
@@ -40,6 +41,7 @@
             width: 100%;
             &:hover {
                 scale: 1.1;
+                opacity: 0.75;
             }
         }
     }
@@ -53,14 +55,47 @@
     &_i{
         &_logo {
             text-align: start;
-            font-size: $font_xxxl;
+            font-size: $font_xxl;
             width: 100%;
-            padding: 0.55rem;
+            &:hover {
+                scale: 1.1;
+                opacity: 0.75;
+                transition: 0.3s;
+            }
         }
     }
     &_div{
         &_text {
-            font-size: 1.3rem;
+            font-size: $font_medium;
+            font-style: normal;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+}
+
+.repo_container {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    &_i{
+        &_logo {
+            text-align: start;
+            font-size: $font_xxl;
+            width: 100%;
+            padding-left: 1rem;
+            color: #FFAB00;
+            &:hover {
+                opacity: 0.75;
+                transition: 0.3s;
+            }
+        }
+    }
+    &_a{
+        &_text {
+            padding: 0.5rem;
+            font-size: $font_medium;
             font-style: normal;
             font-weight: 400;
             text-decoration: none;

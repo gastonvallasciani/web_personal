@@ -289,7 +289,7 @@ nav .menu_li_a:hover .menu_li_a_i {
   flex-direction: column;
   width: 100%;
   max-width: 85rem;
-  padding: 5rem 2rem 5rem 2rem;
+  padding: 5rem 0rem 5rem 0rem;
 }
 @media screen and (max-width: 768px) {
   .homepage_container_section_about_me {
@@ -429,18 +429,17 @@ nav .menu_li_a:hover .menu_li_a_i {
   background-color: #fff;
 }
 .homepage_container_section_contact_form_container_label_text_container_text {
-  background-color: #E9E9E9;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 500;
   min-height: 4rem;
+  border-radius: 5px;
   margin-bottom: 0.5rem;
   width: 100%;
   border-width: 0.05rem;
   border-color: #000;
 }
 .homepage_container_section_contact_form_container_label_text_container_text_area {
-  background-color: #E9E9E9;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 500;
@@ -448,13 +447,11 @@ nav .menu_li_a:hover .menu_li_a_i {
   min-height: 20rem;
   width: 100%;
   border-width: 0.05rem;
+  border-radius: 5px;
   border-color: #000;
 }
 .homepage_container_section_contact_form_container_label_text_container_text_area:focus {
-  border-color: #dfe0df; /* Cambia el color del borde cuando el campo tiene el foco */
   box-shadow: 0 0 5px #dfe0df; /* Agrega una sombra cuando el campo tiene el foco */
-  border-width: 0.5px;
-  background-color: #dfe0df;
 }
 .homepage_container_section_contact_form_button_container {
   display: flex;
@@ -522,11 +519,6 @@ nav .menu_li_a:hover .menu_li_a_i {
   justify-content: flex-end;
   align-items: center;
   flex-wrap: nowrap;
-}
-@media (max-width: 768px) {
-  .footer_container_redes_mail_container {
-    display: none;
-  }
 }
 .footer_container_redes_mail_container_mail {
   font-size: 1.5rem;
@@ -601,6 +593,7 @@ nav .menu_li_a:hover .menu_li_a_i {
 }
 .linkedin_container_a_logo:hover {
   scale: 1.1;
+  opacity: 0.75;
 }
 
 .github_container {
@@ -620,6 +613,7 @@ nav .menu_li_a:hover .menu_li_a_i {
 }
 .github_container_a_logo:hover {
   scale: 1.1;
+  opacity: 0.75;
 }
 
 .mail_container {
@@ -630,12 +624,41 @@ nav .menu_li_a:hover .menu_li_a_i {
 }
 .mail_container_i_logo {
   text-align: start;
-  font-size: 3.2rem;
+  font-size: 3rem;
   width: 100%;
-  padding: 0.55rem;
+}
+.mail_container_i_logo:hover {
+  scale: 1.1;
+  opacity: 0.75;
+  transition: 0.3s;
 }
 .mail_container_div_text {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.repo_container {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.repo_container_i_logo {
+  text-align: start;
+  font-size: 3rem;
+  width: 100%;
+  padding-left: 1rem;
+  color: #FFAB00;
+}
+.repo_container_i_logo:hover {
+  opacity: 0.75;
+  transition: 0.3s;
+}
+.repo_container_a_text {
+  padding: 0.5rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
@@ -652,7 +675,7 @@ nav .menu_li_a:hover .menu_li_a_i {
 .homepage_img_container {
   display: flex;
   justify-content: space-around;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 @media screen and (max-width: 500px) {
   .homepage_img_container {

@@ -1,7 +1,7 @@
 .homepage_img_container {
     display: flex;
     justify-content: space-around;
-    padding-top: 3rem;    
+    padding-top: 2rem;    
     @media screen and (max-width: 500px){
         flex-wrap: wrap;
         gap: 1rem;

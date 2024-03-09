@@ -196,7 +196,7 @@ nav {
             @include flex(column, null, null, null);
             width: 100%;
             max-width: 85rem;
-            padding: 5rem 2rem 5rem 2rem;
+            padding: 5rem 0rem 5rem 0rem;
             @media screen and (max-width: 768px) {
                 padding: 5rem 4rem 5rem 4rem;
             }
@@ -293,27 +293,24 @@ nav {
 
                         }
                         &_text {
-                            background-color: #E9E9E9;
                             @include font_config($font_large, normal, 500, null);
                             min-height: 4rem;
+                            border-radius: 5px;
                             margin-bottom: 0.5rem;
                             width: 100%;
                             border-width: 0.05rem;
                             border-color: #000;
                         }
                         &_text_area {
-                            background-color: #E9E9E9;
                             @include font_config($font_large, normal, 500, null);
                             margin-bottom: 2rem;
                             min-height: 20rem;
                             width: 100%;
                             border-width: 0.05rem;
+                            border-radius: 5px;
                             border-color: #000;
                             &:focus{
-                                border-color:#dfe0df; /* Cambia el color del borde cuando el campo tiene el foco */
                                 box-shadow: 0 0 5px #dfe0df; /* Agrega una sombra cuando el campo tiene el foco */
-                                border-width: 0.5px;
-                                background-color: #dfe0df;
                             }
                         }
                     }
@@ -369,10 +366,6 @@ nav {
             &_mail_container {
                 @include flex(row, flex-end, center, null);
                 flex-wrap: nowrap;
-                
-                @media (max-width: 768px) {
-                    display: none;
-                }
                 &_mail {
                     @include font_config($font_medium, normal, 400, null);
                     margin: 0;
@@ -388,6 +381,7 @@ nav {
 
 .footer_a {
     color: $principal_color;
+
     padding: 0.5rem;
 }
 
