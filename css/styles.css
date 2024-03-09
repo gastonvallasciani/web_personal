@@ -579,6 +579,7 @@ nav .menu_li_a:hover .menu_li_a_i {
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .linkedin_container_a_text {
   font-size: 1.5rem;
@@ -600,6 +601,7 @@ nav .menu_li_a:hover .menu_li_a_i {
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .github_container_a_text {
   font-size: 1.5rem;
@@ -621,6 +623,7 @@ nav .menu_li_a:hover .menu_li_a_i {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  align-items: center;
 }
 .mail_container_i_logo {
   text-align: start;
@@ -644,11 +647,10 @@ nav .menu_li_a:hover .menu_li_a_i {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  align-items: center;
 }
 .repo_container_i_logo {
-  text-align: start;
   font-size: 3rem;
-  width: 100%;
   padding-left: 1rem;
   color: #FFAB00;
 }
@@ -662,6 +664,11 @@ nav .menu_li_a:hover .menu_li_a_i {
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
+}
+
+.prueba {
+  display: flex;
+  align-items: flex-start;
 }
 
 .text_color {

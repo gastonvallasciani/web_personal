@@ -3,6 +3,7 @@
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     &_a {
         &_text {
             font-size: $font_medium;
@@ -28,6 +29,7 @@
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     &_a {
         &_text {
             font-size: $font_medium;
@@ -52,6 +54,7 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    align-items: center;
     &_i{
         &_logo {
             text-align: start;
@@ -79,11 +82,10 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    align-items: center;
     &_i{
         &_logo {
-            text-align: start;
             font-size: $font_xxl;
-            width: 100%;
             padding-left: 1rem;
             color: #FFAB00;
             &:hover {
@@ -101,4 +103,9 @@
             text-decoration: none;
         }
     }
+}
+
+.prueba {
+    display: flex;
+    align-items: flex-start;
 }
